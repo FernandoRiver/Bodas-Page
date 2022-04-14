@@ -40,6 +40,8 @@ li{
     list-style: none;
     padding: 1rem 0;
 }
+
+/* ---------- NAVEGADOR ---------- */
 .nav{
     display: flex;
     flex-direction: column;
@@ -119,7 +121,7 @@ nav ul{
     padding: 0;
     transition: all ease 0.5s;
     opacity: 0;
-    top: 0;
+    top: -5rem;
 }
 .open .o-1,.open .o-2,.open .o-3,.open .o-4,.open .o-5{
     background-color: rgba(255, 255, 255, 0.8);
@@ -175,6 +177,7 @@ nav ul{
 }
 .hero h1{
     font-family: 'Updock', cursive;
+    font-weight: 600;
     font-size: 3.5rem;
 }
 .hero h3{
@@ -222,7 +225,7 @@ nav ul{
 }
 .historia-div p{
     font-size: 3rem;
-
+    font-family: 'Beau Rivage', cursive;
 }
 
 @media (max-width: 852px) {
@@ -288,9 +291,12 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
 }
 .itinerario-div h1{
-    font-weight: 100;
+    font-weight: 300;
+    font-family: 'EB Garamond', serif;
+    font-size: 4rem;
 }
 .container{
     width: 80%;
@@ -299,6 +305,10 @@ nav ul{
     width: 100%;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgb(199, 197, 197);
+}
+.itinerario-card:last-child{
+    border-bottom: none;
 }
 
 .fecha{
@@ -309,6 +319,8 @@ nav ul{
     font-size: 4rem;
     padding: 5rem 0;
     position: relative;
+    font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
 }
 .fecha .hoja{
     top: 2rem;
@@ -328,8 +340,10 @@ nav ul{
     letter-spacing: 0.2rem;
 }
 .evento h3{
-    color: rgb(227,197,193);
+    color: #d68d84;
     letter-spacing: 0.2rem;
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
 }
 .evento p{
     font-size: 2.5rem;
@@ -362,7 +376,10 @@ nav ul{
 /* ---------- ubicacion ---------- */
 
 .ubicacion-div{
-    background-color: white;
+    background-image: url(../img/hero-3.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,15 +387,58 @@ nav ul{
     text-align: center;
     padding: 10rem 0;
 }
+.ubicacion-div h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+}
 
 .ubicacion-div p{
     width: 80%;
     max-width: 80rem;
     font-size: 4rem;
+    font-family: 'Cookie', cursive;
 }
 
+@media (max-width: 900px){
+    .ubicacion-div{
+        background-size: auto 100%;
+    }
+}
+@media (max-width: 560px){
+    .ubicacion-div{
+        background-size: auto 100%;
+    }
+}
 /* -------------------------------- */
 
+/* ---------- ubicacion ---------- */
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* -------------------------------- */
+/* ---------- Registro ---------- */
+.registro{
+    background-color: white;
+}
+.registro .container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fill, minmax(32rem,1fr));;
+}
+.registro-card{
+    width: 32rem;
+    height: 15rem;
+    margin: 0 auto;
+}
+.registro-card img{
+    width: 100%;
+    height: 100%;
+}   
+/* -------------------------------- */
 /* ---------- FAQ ---------- */
 .faq-div{
     background-color: rgb(247,233,232);
@@ -394,6 +454,10 @@ nav ul{
     max-width: 89rem;
 }
 
+.faq-div h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
 .faq-card h3{
     margin: 0;
     font-size: 3rem;
