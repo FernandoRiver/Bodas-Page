@@ -31,10 +31,12 @@ const menuBoton = () => {
     boton.addEventListener("click", ()=>{
         if((boton.classList).contains("open")){
             boton.classList.remove("open");
+            boton.style.backgroundColor = "rgba(255, 255, 255, 0)";
             lista.classList.remove("open");
         }
         else{
             boton.classList.add("open");
+            boton.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
             lista.classList.add("open");
         }
     });

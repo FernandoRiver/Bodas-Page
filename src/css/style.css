@@ -55,13 +55,14 @@ nav ul{
 .menu-boton{
     width: 4rem;
     height: 4rem;
-    background-color: rgba(255, 255, 255, 0.234);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     position: absolute;
-    top: -3rem;
-    left: 4rem;
+    top: -6rem;
+    left: 3rem;
     padding: 0;
     z-index: 15;
-
+    border-radius: 0.1rem;
+    overflow: hidden;
 }
 .menu-boton:hover{
     cursor: pointer;
@@ -104,12 +105,12 @@ nav ul{
 }
 
 .menu-lista{
-    background-color: rgba(255, 255, 255, 0.234);
+    background-color: rgba(255, 255, 255, 0.905);
     width: 15rem;
     padding: 0;
     position: absolute;
-    top: -5rem;
-    left: 4rem;
+    top: -8rem;
+    left: 3rem;
     z-index: 10;
 }
 .o-1,.o-2,.o-3,.o-4,.o-5{
@@ -121,7 +122,7 @@ nav ul{
     top: 0;
 }
 .open .o-1,.open .o-2,.open .o-3,.open .o-4,.open .o-5{
-    background-color: rgba(255, 255, 255, 0.234);
+    background-color: rgba(255, 255, 255, 0.8);
     opacity: 1;
 }
 .open .o-1{
