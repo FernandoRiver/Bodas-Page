@@ -115,7 +115,7 @@ nav ul{
     left: 3rem;
     z-index: 10;
 }
-.o-1,.o-2,.o-3,.o-4,.o-5{
+.o-1,.o-2,.o-3,.o-4,.o-5,.o-6{
     position: absolute;
     width: 15rem;
     padding: 0;
@@ -123,7 +123,7 @@ nav ul{
     opacity: 0;
     top: -5rem;
 }
-.open .o-1,.open .o-2,.open .o-3,.open .o-4,.open .o-5{
+.open .o-1,.open .o-2,.open .o-3,.open .o-4,.open .o-5,.open .o-6{
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 1;
 }
@@ -141,6 +141,9 @@ nav ul{
 } 
 .open .o-5{
     top: 22rem;
+} 
+.open .o-6{
+    top: 26rem;
 } 
 
 /* -------------------------------- */
@@ -416,16 +419,23 @@ nav ul{
 }
 /* -------------------------------- */
 
-/* ---------- ubicacion ---------- */
-.registro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* -------------------------------- */
 /* ---------- Registro ---------- */
 .registro{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+.registro h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 5rem;
+}
+.registro p{
+    margin-top: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    transition: all ease 0.5s;
 }
 .registro .container{
     display: grid;
@@ -443,6 +453,24 @@ nav ul{
     width: 100%;
     height: 100%;
 }   
+@media (max-width: 450px) {
+    .registro p{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 350px) {
+    .registro h1{
+        font-size: 3rem;
+    }
+    .registro p{
+        font-size: 1.2rem;
+    }
+    .registro-card{
+        width: 26rem;
+        height: 9rem;
+        margin: 0 auto;
+    }
+}
 /* -------------------------------- */
 /* ---------- FAQ ---------- */
 .faq-div{
