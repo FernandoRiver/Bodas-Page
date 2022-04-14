@@ -365,6 +365,30 @@ nav ul{
     .itinerario-card{
         flex-direction: column;
     }
+    .itinerario-div h1{
+        font-size: 1.6rem;
+    }
+    .fecha{
+        font-size: 2rem;
+    }
+    .fecha .hoja{
+        top: 2rem;
+        left: -4rem;
+    }
+    .evento h3{
+        font-size: 1.5rem;
+    }
+    .evento a{
+        font-size: 1.5rem;
+    }
+    .evento p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 305px) {
+    .itinerario-div h1{
+        font-size: 1rem;
+    }
 }
 /* -------------------------------- */
 
@@ -417,6 +441,17 @@ nav ul{
         background-size: auto 100%;
     }
 }
+@media (max-width: 380px) {
+    .ubicacion-div{
+        padding: 3rem 0;
+    }
+    .ubicacion-div h1{
+        font-size: 5rem;
+    }
+    .ubicacion-div p{
+        font-size: 3rem;
+    }
+}
 /* -------------------------------- */
 
 /* ---------- Registro ---------- */
@@ -460,10 +495,12 @@ nav ul{
 }
 @media (max-width: 350px) {
     .registro h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .registro p{
-        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        font-size: 2rem;
     }
     .registro-card{
         width: 26rem;
