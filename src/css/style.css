@@ -1,6 +1,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after{
@@ -14,10 +15,19 @@ body{
     font-size: 3rem;
     margin: 0;
     background-image: url(../img/hero.jpg);
-    background-size: 100% auto;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     color: rgb(55,50,45);
+    transition: all ease 0.5s;
+    
+}
+@media (max-width: 800px) {
+    body{
+        background-size: auto 100vh;
+        
+    }
 }
 a{
     text-decoration: none;
@@ -83,7 +93,7 @@ li{
 /* ---------- Historia ---------- */
 .historia-div{
     width: 100%;
-    height: 60rem;
+    height: 80rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,11 +115,20 @@ li{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
     letter-spacing: 1.35rem;
-    font-size: 2.7rem;
+    font-size: 4rem;
 }
 .historia-div p{
-    font-size: 1.5rem;
+    font-size: 3rem;
+
 }
+
+@media (max-width: 852px) {
+    .historia-div{
+        padding: 10rem 0;
+        height: auto;
+    }
+}
+
 /* -------------------------------- */
 
 /* ---------- Imagenes ---------- */
@@ -118,16 +137,21 @@ li{
     width: 100%;
     height: 60rem;
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: relative;
     margin: auto;
+    background-color: #ffffff;
+    /* background-color: #2e2e2e; */
+}
+.img-scroll .img-container{
+    position: absolute;
+    top: -10rem;
+    width: 98rem;
+    height: 55.6rem;
     background-color: #2e2e2e;
 }
 .img-scroll img{
-    position: absolute;
-    width: 98rem;
-    height: 55.6rem;
-    transition: all ease .75s;
+    transition: all ease 0.75s;
 }
 .img-scroll .img{
     opacity: 1;
@@ -215,6 +239,7 @@ li{
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 10rem 0;
 }
 
 .ubicacion-div p{
@@ -232,6 +257,7 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 6rem 0;
 }
 
 .faq-div .faq-card{
