@@ -261,11 +261,22 @@ nav ul{
     transition: all ease 0.75s;
 }
 .img-scroll .img{
+    width: 100%;
+    height: 100%;
     opacity: 1;
 }
 
 .img-scroll .img-effect{
     opacity: 0.05;
+}
+@media (max-width: 800px) {
+    .img-container{
+        position: absolute;
+        top: -10rem;
+        width: 100%;
+        height: 40.6rem;
+        background-color: #2e2e2e;
+    }
 }
 /* -------------------------------- */
 
