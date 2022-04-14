@@ -441,7 +441,7 @@ nav ul{
 /* -------------------------------- */
 /* ---------- FAQ ---------- */
 .faq-div{
-    background-color: rgb(247,233,232);
+    background-color: #feedec;
     display: flex;
     flex-direction: column;
     align-items: center;
