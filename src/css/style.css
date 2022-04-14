@@ -234,9 +234,14 @@ nav ul{
         height: auto;
     }
 }
+@media (max-width: 500px) {
+    .historia-div p{
+        font-size: 2.5rem;
+    }
+}
 @media (max-width: 380px) {
     .historia-div p{
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 }
 
