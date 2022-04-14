@@ -1,4 +1,7 @@
-
+window.addEventListener('DOMContentLoaded', (event) => {
+    changeIMG();
+    menuBoton();
+});
 
 
 function changeIMG(){
@@ -6,12 +9,10 @@ function changeIMG(){
     let i = 1;
     setInterval(()=>{
         setTimeout(()=>{
-            console.log("Time out")
             banner.classList.add("img");
             banner.classList.remove("img-effect");
         },0);
         setTimeout(()=>{
-            console.log("Quitar")
             banner.classList.remove("img");
             banner.classList.add("img-effect");
         },3500);
@@ -23,4 +24,19 @@ function changeIMG(){
     banner.src = `./src/img/scl-3.jpg`;
 }
 
-changeIMG();
+const menuBoton = () => {
+    const boton = document.getElementById("m-boton");
+    const lista = document.getElementById("m-lista");
+
+    boton.addEventListener("click", ()=>{
+        if((boton.classList).contains("open")){
+            boton.classList.remove("open");
+            lista.classList.remove("open");
+        }
+        else{
+            boton.classList.add("open");
+            lista.classList.add("open");
+        }
+    });
+}
+
