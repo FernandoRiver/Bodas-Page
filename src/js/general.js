@@ -2,10 +2,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
     changeIMG();
     menuBoton();
     registro();
+    // window.scrollY = 0;
+    var altura = screen.height;
+    const historia = document.getElementById("inicio");
+    historia.style.height = altura+"px";
+    console.log(screen.width)
 });
+let scrollPoint = 0;
 
-
-function changeIMG(){
+const changeIMG = () => {
     const banner = document.getElementById('imgBanner');
     let i = 1;
     setInterval(()=>{
@@ -41,7 +46,6 @@ const menuBoton = () => {
         }
     });
     document.addEventListener("click", (e)=>{
-        console.log(e.target.id);
         if((e.target.id != "m-boton" && e.target.id != "m-opcion") && (boton.classList).contains("open")){
             boton.classList.remove("open");
             boton.style.backgroundColor = "rgba(255, 255, 255, 0)";
@@ -63,3 +67,29 @@ const registro = () => {
         registroDiv.appendChild(container);
     }
 }
+
+
+// Scroll
+
+// window.addEventListener("scroll", (e)=>{
+//     if(window.scrollY > scrollPoint){
+        
+//         console.log("Down");
+        
+//         window.scroll(window.screenY, 
+//             findPosition(document.getElementById("historia")));
+//     }
+//     else{
+//         console.log("Up");
+//     }
+// });
+
+// function findPosition(obj) {
+//     var currenttop = 0;
+//     if (obj.offsetParent) {
+//         do {
+//             currenttop += obj.offsetTop;
+//         } while ((obj = obj.offsetParent));
+//         return [currenttop];
+//     }
+// }
