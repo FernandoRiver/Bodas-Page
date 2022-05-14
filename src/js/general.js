@@ -1,33 +1,21 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    changeIMG();
     menuBoton();
-    registro();
     // window.scrollY = 0;
     var altura = screen.height;
-    const historia = document.getElementById("inicio");
-    historia.style.height = altura+"px";
-    console.log(screen.width)
+
+    // const hero = document.getElementById("inicio");
+    // hero.style.height = altura+"px";
+    // const historia = document.getElementById("historia");
+    // historia.style.height = altura+"px";
+    // const celeb = document.getElementById("celeb");
+    // celeb.style.height = altura+"px";
+    // const itinerario = document.getElementById("itinerario");
+    // itinerario.style.height = altura+"px";
+    // const mesa = document.getElementById("mesa");
+    // mesa.style.height = altura+"px";
 });
 let scrollPoint = 0;
 
-const changeIMG = () => {
-    const banner = document.getElementById('imgBanner');
-    let i = 1;
-    setInterval(()=>{
-        setTimeout(()=>{
-            banner.classList.add("img");
-            banner.classList.remove("img-effect");
-        },0);
-        setTimeout(()=>{
-            banner.classList.remove("img");
-            banner.classList.add("img-effect");
-        },3500);
-        banner.src = `./src/img/scl-${i}.jpg`; 
-           
-        if(i+1 > 3) i = 1;
-        else    i++; 
-    },4000);
-}
 
 const menuBoton = () => {
     const boton = document.getElementById("m-boton");
@@ -54,19 +42,7 @@ const menuBoton = () => {
     });
 }
 
-const registro = () => {
-    const registroDiv = document.getElementById("registro");
-    
-    for(let i = 1; i<=9; i++){
-        const container = document.createElement('DIV');
-        const img = document.createElement('IMG');
-        container.classList.add("registro-card");
-        img.src = `./src/img/reg-${i}.png`;
 
-        container.appendChild(img);
-        registroDiv.appendChild(container);
-    }
-}
 
 
 // Scroll
